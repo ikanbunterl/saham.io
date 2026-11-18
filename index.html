@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Terminal Sudirman — Simulator Saham Indonesia</title>
+<meta name="description" content="Simulator edukasi pasar saham Indonesia. 100% virtual, tanpa uang nyata, tanpa server.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="storage-banner" class="storage-banner" hidden></div>
+<header id="topbar" aria-label="Status bursa"></header>
+<div id="app-shell">
+  <nav id="rail" aria-label="Navigasi utama"></nav>
+  <main id="main">
+    <section class="screen active" id="screen-home" aria-label="Beranda"><div class="skel"></div><div class="skel"></div><div class="skel"></div></section>
+    <section class="screen" id="screen-market" aria-label="Pasar"><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div></section>
+    <section class="screen" id="screen-news" aria-label="Berita"><div class="skel"></div><div class="skel"></div><div class="skel"></div></section>
+    <section class="screen" id="screen-portfolio" aria-label="Portofolio"><div class="skel"></div><div class="skel"></div></section>
+    <section class="screen" id="screen-profile" aria-label="Profil"></section>
+    <section class="screen" id="screen-faq" aria-label="FAQ"></section>
+    <footer id="app-footer">
+      <p class="foot-note"><strong>DISCLAIMER:</strong> Terminal Sudirman adalah simulator edukasi, bukan platform trading. Seluruh aset, saldo, dan harga bersifat virtual dan tidak memiliki nilai uang nyata. Bukan nasihat keuangan.</p>
+      <div class="foot-links">
+        <button class="btn btn-ghost btn-sm" data-action="legal" data-doc="disclaimer">Disclaimer Lengkap</button>
+        <button class="btn btn-ghost btn-sm" data-action="legal" data-doc="privacy">Privacy Notice</button>
+        <button class="btn btn-ghost btn-sm" data-action="legal" data-doc="tos">Terms of Service</button>
+      </div>
+    </footer>
+  </main>
+  <aside id="dock" aria-label="Detail saham dan order"></aside>
+</div>
+<nav id="bottomnav" aria-label="Navigasi bawah"></nav>
+<div id="modal-root"></div>
+<div id="toast-root" aria-live="polite" aria-atomic="false"></div>
+<div id="sr-announce" class="sr-only" aria-live="polite"></div>
+<noscript><div class="storage-banner">Game ini membutuhkan JavaScript aktif.</div></noscript>
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
